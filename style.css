@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body{
+    margin: 0;
+}
+/*HEADER E MENU*/
+header{
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+header p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+/*HEADER E MENU*/
+
+/*COLUNA 1 DE CORES, DADOS E FORMATAÇÃO*/
+#inp-col1{
+    display: grid;
+    grid-template-columns: 1;
+    margin-right: 5px;
+}
+
+#inp-col1 input{
+    margin-bottom: 5px;
+    min-height: 20px;
+}
+
+#inp-col2 button{
+    margin-bottom: 5px;
+}
+
+#inp-col2 input{
+    margin-bottom: 5px;
+    max-height: 20px;
+}
+
+#inp-col2{
+    display: grid;
+    grid-template-columns: 1;
+}
+
+#inp-row{
+    display: flex;
+    justify-content: center;
+}
+
+#col-1{
+    max-width: 30%;
+}
+
+#col-1 p{
+    text-align: center;
+}
+
+/*BOTÕES DE SELEÇÃO DE COR*/
+#select-color{
+    display: flex;
+    justify-content: center;
+}
+
+#select-color button{
+    min-height: 25px;
+    min-width: 25px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#select-color button:hover{
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#vermelho{
+    background-color: red;
+}
+
+#preto{
+    background-color: black;
+}
+
+#branco{
+    background-color: white;
+}
+
+#col-2{
+    display: flex;
+    align-items: center;
+}
+
+#verm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    height: 320px;
+    width: 620px;
+    box-shadow: 0px 0px 20px black;
+    margin-top: 10px;
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#verm div{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+#width{
+    min-width: 331px;
+    max-height: 600px;
+    background-color: black;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-top: 15px;
+    color: white;
+    overflow: auto;
+}
+
+#pick-color{
+    width: 25px;
+    height: 25px;
+}
+
+#bttn{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.flex div{
+    text-align: center;
+}
+
+#fontColor{
+    text-align: center;
+}

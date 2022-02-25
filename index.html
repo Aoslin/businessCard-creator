@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+
+
+    <header>
+        <p>
+            CRIADOR DE CARTÃO DE VISITA
+        </p>
+    </header>
+
+    <section>
+        <div id="col-1">
+
+            <!--Cores de Fundo-->
+            <div id="cores">
+                <p>CORES DE FUNDO</p>
+                <hr>
+                <div id="select-color">
+                    <input type="color" oninput="changeColor()" id="pick-color">
+                </div>
+            </div>
+
+            <!--Tamanho do Cartão-->
+            <div id="size">
+                <p>ALTERE O TAMANHO DO SEU CARTÃO</p>
+                <p>(EM px)</p>
+                <input type="text" name="" id="largura" placeholder="Largura">
+                <input type="text" name="" id="altura" placeholder="Altura">
+                <div id="bttn">
+                    <button onclick="changeSize()">Alterar tamanho</button>
+                </div>
+            </div>
+
+            <!--Dados Pessoais-->
+            <div id="dados">
+                <p>DADOS PESSOAIS</p>
+                <hr>
+                <div id="inp-row">
+                    <div id="inp-col1">
+                        <input type="text" placeholder="Nome/Sobrenome..." oninput="escreverNome()" id="nome" maxlength="50">
+                        <input type="text" placeholder="E-mail..." oninput="escreverEmail()" id="email" maxlength="50"> 
+                        <input type="text" placeholder="Site..." oninput="escreverSite()" id="site" maxlength="50">
+                    </div>
+                    <div id="inp-col2">
+                        <input type="text" placeholder="Descrição..." oninput="escreverDescricao()" id="descricao" maxlength="50">
+                        <input type="text" placeholder="Telefone..." oninput="escreverTelefone()" id="telefone" maxlength="50">
+                        <button id="limpar" onclick="limpar()">Limpar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Formatar Texto-->
+            <div id="formatar">
+                <p>FORMATAR TEXTO</p>
+                <hr>
+                <div class="flex">
+                    <div>
+                        <p>Selecione o tamanho da fonte:</p>
+                        <select name="" id="size-font" oninput="selectFontSize()">
+                            <option value="2">8px</option>
+                            <option value="10">10px</option>
+                            <option value="14">14px</option>
+                            <option value="18">18px</option>
+                            <option value="24">24px</option>
+                            <option value="28">28px</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Selecione a fonte:</p>
+                        <select name="" id="select-font" oninput="selectFont()">
+                            <option value="Arial">Arial</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Roboto">Roboto</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="fontColor">
+                    <p>Selecione a cor da fonte:</p>
+                    <input type="color" oninput="changeFontColor()" id="pick-fontColor">
+                    <div>
+                        <p>Alinhamento do texto:</p>
+                        <button onclick="alinharEsq()">Alinhar à esquerda</button>
+                        <button onclick="alinharCen()">Alinhar ao centro</button>
+                        <button onclick="alinharDir()">Alinhar à direita</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <center>
+                    <p>ENVIAR LOGO</p>
+                    <hr>
+                    <input type="file" id="file">
+                </center>
+            </div>
+        </div>
+
+        <!--Cartão-->
+        <div id="col-2">
+            <div id="verm">
+                <div id="logo"></div>
+                <div id="nome-cv"></div>
+                <div id="email-cv"></div>
+                <div id="site-cv"></div>
+                <div id="descricao-cv"></div>
+                <div id="telefone-cv"></div>
+            </div>
+        </div>
+
+        <!--Coluna para escolher Backgrounds-->
+        <div id="width">
+            <button onclick="removeBg()">Remover Background</button>
+            <p>Background 1</p>
+            <img src="./BGs/backgorund.png" alt="" value="./BGs/backgorund.png" onclick="changeBg()" width="280px" height="139px">
+            <p>Background 2</p>
+            <img src="./BGs/fundo-aquarela-pintado-a-mao-com-forma-de-ceu-e-nuvens_24972-1095.webp" alt="" onclick="changeBg1()" width="280px" height="139px">
+            <p>Background 3</p>
+            <img src="./BGs/istockphoto-952039286-170667a.jpg" alt="" onclick="changeBg2()" width="280px" height="139px">
+            <p>Background 4</p>
+            <img src="./BGs/pngtree-blue-carbon-background-with-sport-style-and-golden-light-image_371487.jpg" alt="" value="./BGs/backgorund.png" onclick="changeBg3()" width="280px" height="139px">
+            <p>Background 5</p>
+            <img src="./BGs/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg" alt="" value="./BGs/backgorund.png" onclick="changeBg4()" width="280px" height="139px">
+            <p>Background 6</p>
+            <img src="./BGs/white-gold-geometric-pattern-background-vector_53876-140726.webp" alt="" value="./BGs/backgorund.png" onclick="changeBg5()" width="280px" height="139px">
+        </div>
+    </section>
+</body>
+</html>
